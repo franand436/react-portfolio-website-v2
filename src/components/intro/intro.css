@@ -1,12 +1,112 @@
-.i{
-    display: flex;
-    height: 100vh;
+.i {
+  display: flex;
+  height: 100vh;
 }
 
-.i-left{
-    flex: 1;
+.i-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
-.i-right{
-    flex: 1;
+.i-right {
+  flex: 1;
+  position: relative;
+}
+
+.i-left-wrapper {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.i-intro {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.i-name {
+  font-size: 60px;
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 153, 204);
+  display: flex;
+  align-items: center;
+}
+
+.i-img {
+  width: 70vh;
+  height: 70vh;
+  padding: 10vh;
+  padding-top: 15vh;
+  padding-left: 20vh;
+  position: absolute;
+}
+
+.i-bg {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  background-color: rgb(17, 89, 172);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.downarrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: blink 5s infinite; /* Apply the "blink" animation */
+}
+
+.downarrow-img {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
+}
+
+/* Define the "blink" animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0; /* Arrow is invisible at the start and end of animation */
+  }
+  50% {
+    opacity: 1; /* Arrow is visible in the middle of animation */
+  }
 }
