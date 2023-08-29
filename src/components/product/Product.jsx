@@ -1,6 +1,6 @@
 import "./product.css";
 
-function Product() {
+const Product = ({img}) => {
   return (
     <div className="p">
       <div className="p-browser">
@@ -8,8 +8,9 @@ function Product() {
         <div className="p-circle"></div>
         <div className="p-circle"></div>
       </div>
+        <img src={img} alt="" className="p-img" />
     </div>
   );
-}
+};
 
 export default Product;
