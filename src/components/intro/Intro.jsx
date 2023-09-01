@@ -14,13 +14,13 @@ const Intro = () => {
             <div className="i-title">
               <div className="i-title-wrapper">
               <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">Photographer</div>
               <div className="i-title-item">Cybersecurity Enthusiest</div>
               <div className="i-title-item">Server Administrator</div>
               <div className="i-title-item">Network Administrator</div>
+              <div className="i-title-item">Photographer</div>
               </div>
             </div>
-            <p className="i-desc">I recently completed a Cybersecurity course through Woz U and am now lookign to break into the work field. I also have a background in software and Web development that will help me as a Cybersecurity proffessional. I am excited to join the workforce and keep learning more about the world of Cybersecurity in order to keep my and my peers information safe and secure.</p>
+            <p className="i-desc">Welcome, and thank you for stopping by. I am looking to launch into the world of Cybersecurity and IT. Ever since I was young, I've been seriously into all things tech. It's been a lifelong passion that's stuck with me. Now, I'm excited to turn that passion into a fulfilling career, one that I can see myself happily retiring from in the distant future.  </p>
           </div>
         </div>
         <div className="i-right">

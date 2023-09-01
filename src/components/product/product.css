@@ -1,39 +1,71 @@
 .p {
-    width: 30%;
-    height: 40vh;
-    margin: 20px 10px;
-    border: 2px solid rgb(243, 242, 242);
-    border-radius: 10px 10px 0px 0px;
-    overflow: hidden;
-  }
-  
-  .p-browser {
-    height: 20px;
-    background-color: rgb(226, 224, 227);
-    display: flex;
-    align-items: center;
-    position: sticky;
-    z-index: 2;
-  }
-  
-  .p-circle {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    margin: 3px;
-    background-color: white;
-  }
-  
-  .p-img {
-    width: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  }
-  
-  @media screen and (max-width: 480px) {
-    .p {
-      width: 40%;
-      height: 20vh;
-    }
-  }
+  width: 30%;
+  height: 32vh;
+  margin: 20px 10px;
+  border: 2px solid rgb(243, 242, 242);
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-browser {
+  height: 20px;
+  background-color: rgb(202, 202, 202);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 2;
+}
+
+.p-circle1 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: rgb(255, 25, 25);
+}
+
+.p-circle2 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: rgb(255, 217, 0);
+}
+
+.p-circle3 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: rgb(240, 240, 240);
+}
+
+.p-img {
+  width: 100%;
+  height: 100%; /* Ensure the image takes the full height of the container */
+  object-fit: cover;
+}
+
+.pl-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(2, 2, 2, .8);
+  color: white;
+  font-size: .95em;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.pl-text p {
+  max-width: 85%; /* Set the maximum width for the text within the box */
+  margin: 0 auto; /* Center the text horizontally */
+}
+
+
+.p:hover .pl-text {
+  opacity: 1;
+}

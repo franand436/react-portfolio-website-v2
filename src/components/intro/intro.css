@@ -1,6 +1,7 @@
 .i {
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 
 .i-left {
@@ -20,6 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 1.3em;
 }
 
 .i-intro {
@@ -70,7 +72,7 @@
   height: 70vh;
   padding: 10vh;
   padding-top: 15vh;
-  padding-left: 20vh;
+  padding-left: 25vh;
   position: absolute;
 }
 
