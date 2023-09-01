@@ -17,9 +17,7 @@ const About = () => {
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
         <p className="a-sub">
-          It started with playing online flash games, turned into taking apart
-          my PC to try and upgrade it so I didn't have to buy a new PC. Now I'm
-          hoping to turn tech into a full-blown tech career.
+        Building and repairing computers is one of my favorite pass times. I built my home server from left over PC parts I accumulated over the years. I enjoy helping friends and family with their tech needs as well.  Now I want to make a career out of it🙂.
         </p>
         <p className="a-desc">
         I have been fortunate to have friends and family that think of me before they throw away old computers they aren’t planning to use anymore. I have been able to take these computers and build my own home lab as well as trying out different networking techniques to spread the load over various machines instead of having my main desktop do all the heavy lifting.
