@@ -27,8 +27,9 @@
     justify-content: space-between;
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 375px) {
     .pl {
+      overflow: hidden;
       padding: 10px;
     }
   
@@ -37,6 +38,37 @@
     }
   
     .pl-desc {
-      display: none;
+      margin: 0px;
+      padding-bottom: 30px;
+      font-size: 15px;
+    }
+    .pl-title {
+      padding-top: 50px;
+      padding-bottom: 25px;
+      font-size: 30px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .pl {
+      overflow: hidden;
+      padding: 10px;
+    }
+  
+    .pl-texts {
+      width: 100%;
+    }
+  
+    .pl-desc {
+      margin: 0px;
+      padding-bottom: 30px;
+      font-size: 15px;
+    }
+    .pl-title {
+      padding-top: 50px;
+      padding-bottom: 25px;
+      font-size: 30px;
+    }
+  }
+
+  

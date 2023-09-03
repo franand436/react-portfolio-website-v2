@@ -53,9 +53,9 @@
   left: 0;
   width: 100%;
   padding: 10px;
-  background-color: rgba(2, 2, 2, .8);
+  background-color: rgba(2, 2, 2, 0.8);
   color: white;
-  font-size: .95em;
+  font-size: 0.95em;
   opacity: 0;
   transition: opacity 1.5s ease;
 }
@@ -65,7 +65,21 @@
   margin: 0 auto; /* Center the text horizontally */
 }
 
-
 .p:hover .pl-text {
   opacity: 1;
+}
+
+@media screen and (max-width: 375px) {
+  .p {
+    width: 90%;
+    height: auto;
+    font-size: .81em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p {
+    width: 90%;
+    height: auto;
+    font-size: .81em;
+  }
 }

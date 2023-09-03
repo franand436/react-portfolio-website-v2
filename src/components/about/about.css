@@ -74,31 +74,135 @@
 }
 .a-school-title {
   font-weight: bold;
-  /* color: #555; */
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   .a {
+    overflow: hidden;
+    padding-top: 0;
+    display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 50px;
+    height: 100%;
   }
 
   .a-left {
-    width: 100%;
+    flex: 1;
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .a-right {
+    height: 100vh;
   }
 
   .a-card {
-    height: 30vh;
+    height: 20em;
   }
 
-  .a-card.bg,
-  .a-award {
+  .a-sub,
+  .a-desc,
+  .a-school,
+  .a-school-texts,
+  .a-school-title {
+    font-size: 12px;
+  }
+  .a-title {
+    margin-top: 30px;
+  }
+
+  .a-desc {
+    padding-right: 1em;
+    font-weight: 400;
+  }
+
+  .a-school {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .a-school-img {
+    margin-bottom: 10px; /* Add some spacing between the image and description */
+  }
+
+  .a-school-title {
+    margin-top: 10px; /* Add spacing between school image and title */
+    font-size: 15px;
+  }
+  .a-school-texts {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .a {
+    overflow: hidden;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+  }
+
+  .a-left {
+    flex: 1;
+    width: 90%;
+    padding-bottom: 0;
+  }
+  .a-right {
+    flex: 3;
+  }
+
+  .a-card {
+    height: 20em;
+  }
+
+  .a-sub,
+  .a-desc,
+  .a-school,
+  .a-school-texts,
+  .a-school-title {
+    font-size: 15px;
+    margin: 20px 2em 0px 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .a-title {
+    margin-top: 30px;}
+
+  .a-desc {
+    padding-right: 1em;
+    font-weight: 400;}
+
+  .a-school {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .a-school-img {
+    margin-bottom: 10px; /* Add some spacing between the image and description */
+  }
+
+  .a-school-title {
+    margin-top: 10px; /* Add spacing between school image and title */
+    font-size: 17px;
+    padding-bottom: 15px;
+  }
+  .a-school-texts {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 95%;
+  }
+
+  .a-card.bg {
     display: none;
   }
 
-  .a-right {
-    padding: 20px;
+  .a-left-wrapper {
+    padding-bottom: 0;
   }
 }
