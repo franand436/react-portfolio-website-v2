@@ -8,7 +8,7 @@ const ProductList = () => {
       <div className="pl-texts">
       <h1 className="pl-title">Achievments and Accomplishments.</h1>
           <p className="pl-desc">
-            Here is a list of my achievments and accomplishments in tech. <br />💻🖥️Hover the mouse cursor over one of the tiles for more information🙂<br/>📱Tap one of the cards to see more info
+            Here is a list of my achievments and accomplishments in tech. <br/><br/><p style={{ fontWeight: 'bold' }}>💻🖥️Desktop/Laptops:</p>Hover the mouse cursor over one of the tiles for more information🙂<br/><br/> <p style={{ fontWeight: 'bold' }}>📱Phones/Mobile Devices:</p>Tap one of the cards to see more info
           </p>
       </div>
       <div className="pl-list">
